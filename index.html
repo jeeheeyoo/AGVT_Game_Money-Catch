@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Money Catch Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="game-container">
+        <div class="score-board">
+            <div class="score">Score: <span id="score">0</span></div>
+            <div class="lives">Lives: <span id="lives">❤️❤️❤️</span></div>
+        </div>
+        <canvas id="gameCanvas"></canvas>
+        <div id="gameOver" class="game-over hidden">
+            <h1>Game Over!</h1>
+            <p>Final Score: <span id="finalScore">0</span></p>
+            <button id="restartBtn">Restart</button>
+        </div>
+        <div id="gameClear" class="game-clear hidden">
+            <h1>🎉 You Win! 🎉</h1>
+            <p>Congratulations!</p>
+            <p>Final Score: <span id="clearScore">100</span></p>
+            <button id="clearRestartBtn">Play Again</button>
+        </div>
+        <div class="instructions">
+            <p>Use ← → arrow keys to move</p>
+            <p>💰 Catch money for +10 points</p>
+            <p>🪨 Hit by rock = Game Over!</p>
+        </div>
+    </div>
+    <script src="game.js"></script>
+</body>
+
+</html>
